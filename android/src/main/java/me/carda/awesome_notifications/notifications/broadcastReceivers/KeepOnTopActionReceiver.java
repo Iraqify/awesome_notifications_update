@@ -31,7 +31,7 @@ public class KeepOnTopActionReceiver extends BroadcastReceiver {
 
     @Override
     public void onReceive(final Context context, Intent intent) {
-        ActionReceived actionReceived = NotificationBuilder.buildNotificationActionFromIntent(context, intent);
+        ActionReceived actionReceived = NotificationBuilder.buildNotificationActionFromIntent(context, intent,AwesomeNotificationsPlugin.appLifeCycle);
 
          Log.i(TAG,"onReceive");
 
